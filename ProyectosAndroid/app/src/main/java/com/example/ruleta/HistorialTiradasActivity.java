@@ -90,7 +90,7 @@ public class HistorialTiradasActivity extends AppCompatActivity {
     // Método para obtener el ID del usuario actual
     private long obtenerIdUsuarioActual() {
         SharedPreferences prefs = getSharedPreferences("prefsRuleta", MODE_PRIVATE);
-        long userId = prefs.getLong("userId", 0);
+        long userId = prefs.getLong("usuarioId", 0);
         Log.d("HistorialTiradasActivity", "Recuperado userId de SharedPreferences: " + userId);
         return userId;
     }
