@@ -70,6 +70,13 @@ public class MainActivity extends AppCompatActivity {
                         .show();
             }
         });
+        Button btnSalir = findViewById(R.id.btnSalir);
+        btnSalir.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finishAffinity();
+            }
+        });
     }
 
     private int obtenerMonedasTotalesDelUsuario(String nombreUsuario) {
