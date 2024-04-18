@@ -73,6 +73,7 @@ public class Menu extends AppCompatActivity {
             }
         });
     }
+
     @Override
     protected void onPause() {
         super.onPause();
@@ -122,6 +123,8 @@ public class Menu extends AppCompatActivity {
             intent.putExtra(MusicaFondo.EXTRA_VOLUME, 1.0f);
             startService(intent);
         }
+        // Actualizar las monedas totales al volver de la actividad Tirada
+        actualizarMonedasTotales();
     }
 
     private void actualizarMonedasTotales() {
