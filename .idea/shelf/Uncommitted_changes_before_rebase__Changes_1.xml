@@ -1,0 +1,49 @@
+<changelist name="Uncommitted_changes_before_rebase_[Changes]1" date="1713448399185" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]1/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before rebase [Changes]" />
+  <binary>
+    <option name="BEFORE_PATH" value="ProyectosAndroid/.gradle/buildOutputCleanup/buildOutputCleanup.lock" />
+    <option name="AFTER_PATH" value="ProyectosAndroid/.gradle/buildOutputCleanup/buildOutputCleanup.lock" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]1/buildOutputCleanup.lock" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="ProyectosAndroid/.gradle/8.4/executionHistory/executionHistory.bin" />
+    <option name="AFTER_PATH" value="ProyectosAndroid/.gradle/8.4/executionHistory/executionHistory.bin" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]1/executionHistory.bin" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="ProyectosAndroid/app/build/intermediates/apk/debug/app-debug.apk" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="ProyectosAndroid/app/build/intermediates/processed_res/debug/processDebugResources/out/resources-debug.ap_" />
+    <option name="AFTER_PATH" value="ProyectosAndroid/app/build/intermediates/processed_res/debug/processDebugResources/out/resources-debug.ap_" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]1/resources-debug.ap_" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="ProyectosAndroid/.gradle/8.4/fileHashes/fileHashes.bin" />
+    <option name="AFTER_PATH" value="ProyectosAndroid/.gradle/8.4/fileHashes/fileHashes.bin" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]1/fileHashes.bin" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="ProyectosAndroid/app/build/outputs/apk/debug/app-debug.apk" />
+    <option name="AFTER_PATH" value="ProyectosAndroid/app/build/outputs/apk/debug/app-debug.apk" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]1/app-debug.apk" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="ProyectosAndroid/app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/androidResources" />
+    <option name="AFTER_PATH" value="ProyectosAndroid/app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/androidResources" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]1/androidResources" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="ProyectosAndroid/.gradle/8.4/fileHashes/fileHashes.lock" />
+    <option name="AFTER_PATH" value="ProyectosAndroid/.gradle/8.4/fileHashes/fileHashes.lock" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]1/fileHashes.lock" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="ProyectosAndroid/.gradle/8.4/executionHistory/executionHistory.lock" />
+    <option name="AFTER_PATH" value="ProyectosAndroid/.gradle/8.4/executionHistory/executionHistory.lock" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]1/executionHistory.lock" />
+  </binary>
+</changelist>
