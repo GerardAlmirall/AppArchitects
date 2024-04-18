@@ -1,0 +1,166 @@
+[
+    {
+        "merged": "com.example.ruleta.app-debug-43:/drawable_flechahaciaabajo.png.flat",
+        "source": "com.example.ruleta.app-main-45:/drawable/flechahaciaabajo.png"
+    },
+    {
+        "merged": "com.example.ruleta.app-debug-43:/drawable_rulet.png.flat",
+        "source": "com.example.ruleta.app-main-45:/drawable/rulet.png"
+    },
+    {
+        "merged": "com.example.ruleta.app-debug-43:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.example.ruleta.app-main-45:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.example.ruleta.app-debug-43:/layout_activity_resultado.xml.flat",
+        "source": "com.example.ruleta.app-main-45:/layout/activity_resultado.xml"
+    },
+    {
+        "merged": "com.example.ruleta.app-debug-43:/drawable_moneda.png.flat",
+        "source": "com.example.ruleta.app-main-45:/drawable/moneda.png"
+    },
+    {
+        "merged": "com.example.ruleta.app-debug-43:/raw_perder.mp3.flat",
+        "source": "com.example.ruleta.app-main-45:/raw/perder.mp3"
+    },
+    {
+        "merged": "com.example.ruleta.app-debug-43:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.ruleta.app-main-45:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.ruleta.app-debug-43:/layout_activity_historial_tiradas.xml.flat",
+        "source": "com.example.ruleta.app-main-45:/layout/activity_historial_tiradas.xml"
+    },
+    {
+        "merged": "com.example.ruleta.app-debug-43:/xml_data_extraction_rules.xml.flat",
+        "source": "com.example.ruleta.app-main-45:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.example.ruleta.app-debug-43:/drawable_user.png.flat",
+        "source": "com.example.ruleta.app-main-45:/drawable/user.png"
+    },
+    {
+        "merged": "com.example.ruleta.app-debug-43:/xml_backup_rules.xml.flat",
+        "source": "com.example.ruleta.app-main-45:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "com.example.ruleta.app-debug-43:/drawable_ruleta.png.flat",
+        "source": "com.example.ruleta.app-main-45:/drawable/ruleta.png"
+    },
+    {
+        "merged": "com.example.ruleta.app-debug-43:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.ruleta.app-main-45:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.ruleta.app-debug-43:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.example.ruleta.app-main-45:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.ruleta.app-debug-43:/layout_activity_opciones.xml.flat",
+        "source": "com.example.ruleta.app-main-45:/layout/activity_opciones.xml"
+    },
+    {
+        "merged": "com.example.ruleta.app-debug-43:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.ruleta.app-main-45:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.ruleta.app-debug-43:/drawable_flechaarriba.png.flat",
+        "source": "com.example.ruleta.app-main-45:/drawable/flechaarriba.png"
+    },
+    {
+        "merged": "com.example.ruleta.app-debug-43:/navigation_nav_graph.xml.flat",
+        "source": "com.example.ruleta.app-main-45:/navigation/nav_graph.xml"
+    },
+    {
+        "merged": "com.example.ruleta.app-debug-43:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.example.ruleta.app-main-45:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.example.ruleta.app-debug-43:/layout_fragment_first.xml.flat",
+        "source": "com.example.ruleta.app-main-45:/layout/fragment_first.xml"
+    },
+    {
+        "merged": "com.example.ruleta.app-debug-43:/raw_giro_ruleta.mp3.flat",
+        "source": "com.example.ruleta.app-main-45:/raw/giro_ruleta.mp3"
+    },
+    {
+        "merged": "com.example.ruleta.app-debug-43:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.example.ruleta.app-main-45:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.ruleta.app-debug-43:/drawable_img.png.flat",
+        "source": "com.example.ruleta.app-main-45:/drawable/img.png"
+    },
+    {
+        "merged": "com.example.ruleta.app-debug-43:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.example.ruleta.app-main-45:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.ruleta.app-debug-43:/layout_activity_menu.xml.flat",
+        "source": "com.example.ruleta.app-main-45:/layout/activity_menu.xml"
+    },
+    {
+        "merged": "com.example.ruleta.app-debug-43:/layout_fragment_second.xml.flat",
+        "source": "com.example.ruleta.app-main-45:/layout/fragment_second.xml"
+    },
+    {
+        "merged": "com.example.ruleta.app-debug-43:/raw_musica_fondo.mp3.flat",
+        "source": "com.example.ruleta.app-main-45:/raw/musica_fondo.mp3"
+    },
+    {
+        "merged": "com.example.ruleta.app-debug-43:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.example.ruleta.app-main-45:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.example.ruleta.app-debug-43:/drawable_button_border.xml.flat",
+        "source": "com.example.ruleta.app-main-45:/drawable/button_border.xml"
+    },
+    {
+        "merged": "com.example.ruleta.app-debug-43:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.ruleta.app-main-45:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.ruleta.app-debug-43:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.ruleta.app-main-45:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.ruleta.app-debug-43:/layout_row_tirada.xml.flat",
+        "source": "com.example.ruleta.app-main-45:/layout/row_tirada.xml"
+    },
+    {
+        "merged": "com.example.ruleta.app-debug-43:/layout_activity_tirada.xml.flat",
+        "source": "com.example.ruleta.app-main-45:/layout/activity_tirada.xml"
+    },
+    {
+        "merged": "com.example.ruleta.app-debug-43:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.ruleta.app-main-45:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.ruleta.app-debug-43:/raw_premio.mp3.flat",
+        "source": "com.example.ruleta.app-main-45:/raw/premio.mp3"
+    },
+    {
+        "merged": "com.example.ruleta.app-debug-43:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.example.ruleta.app-main-45:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.example.ruleta.app-debug-43:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.ruleta.app-main-45:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.ruleta.app-debug-43:/drawable_rueda.png.flat",
+        "source": "com.example.ruleta.app-main-45:/drawable/rueda.png"
+    },
+    {
+        "merged": "com.example.ruleta.app-debug-43:/drawable_pointer.png.flat",
+        "source": "com.example.ruleta.app-main-45:/drawable/pointer.png"
+    },
+    {
+        "merged": "com.example.ruleta.app-debug-43:/layout_activity_main.xml.flat",
+        "source": "com.example.ruleta.app-main-45:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.ruleta.app-debug-43:/drawable_moneda2.png.flat",
+        "source": "com.example.ruleta.app-main-45:/drawable/moneda2.png"
+    }
+]

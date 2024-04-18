@@ -1,0 +1,3 @@
+com.example.ruleta.test
+style WhiteBackgroundDialogTheme
+style WhiteBackgroundTheme
