@@ -8,183 +8,190 @@
 8        android:minSdkVersion="24"
 9        android:targetSdkVersion="34" />
 10
-11    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-11-->C:\Users\danie\AppArchitects\ProyectosAndroid\app\src\main\AndroidManifest.xml:48:5-80
-11-->C:\Users\danie\AppArchitects\ProyectosAndroid\app\src\main\AndroidManifest.xml:48:22-78
-12
-13    <permission
-13-->[androidx.core:core:1.9.0] C:\Users\danie\.gradle\caches\transforms-3\0d6cb06616aa642d34b8731b6142f4c4\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
-14        android:name="com.example.ruleta.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-14-->[androidx.core:core:1.9.0] C:\Users\danie\.gradle\caches\transforms-3\0d6cb06616aa642d34b8731b6142f4c4\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
-15        android:protectionLevel="signature" />
-15-->[androidx.core:core:1.9.0] C:\Users\danie\.gradle\caches\transforms-3\0d6cb06616aa642d34b8731b6142f4c4\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
-16
-17    <uses-permission android:name="com.example.ruleta.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-17-->[androidx.core:core:1.9.0] C:\Users\danie\.gradle\caches\transforms-3\0d6cb06616aa642d34b8731b6142f4c4\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
-17-->[androidx.core:core:1.9.0] C:\Users\danie\.gradle\caches\transforms-3\0d6cb06616aa642d34b8731b6142f4c4\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+11    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+11-->C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:4:5-73
+11-->C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:4:22-70
+12    <uses-permission android:name="android.permission.READ_CALENDAR" />
+12-->C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:5:5-72
+12-->C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:5:22-69
+13    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+13-->C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:49:5-80
+13-->C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:49:22-78
+14
+15    <permission
+15-->[androidx.core:core:1.9.0] C:\Users\danie\.gradle\caches\transforms-3\0d6cb06616aa642d34b8731b6142f4c4\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+16        android:name="com.example.ruleta.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+16-->[androidx.core:core:1.9.0] C:\Users\danie\.gradle\caches\transforms-3\0d6cb06616aa642d34b8731b6142f4c4\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+17        android:protectionLevel="signature" />
+17-->[androidx.core:core:1.9.0] C:\Users\danie\.gradle\caches\transforms-3\0d6cb06616aa642d34b8731b6142f4c4\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
 18
-19    <application
-19-->C:\Users\danie\AppArchitects\ProyectosAndroid\app\src\main\AndroidManifest.xml:5:5-47:19
-20        android:allowBackup="true"
-20-->C:\Users\danie\AppArchitects\ProyectosAndroid\app\src\main\AndroidManifest.xml:6:9-35
-21        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-21-->[androidx.core:core:1.9.0] C:\Users\danie\.gradle\caches\transforms-3\0d6cb06616aa642d34b8731b6142f4c4\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
-22        android:dataExtractionRules="@xml/data_extraction_rules"
-22-->C:\Users\danie\AppArchitects\ProyectosAndroid\app\src\main\AndroidManifest.xml:7:9-65
-23        android:debuggable="true"
-24        android:extractNativeLibs="false"
-25        android:fullBackupContent="@xml/backup_rules"
-25-->C:\Users\danie\AppArchitects\ProyectosAndroid\app\src\main\AndroidManifest.xml:8:9-54
-26        android:icon="@mipmap/ic_launcher"
-26-->C:\Users\danie\AppArchitects\ProyectosAndroid\app\src\main\AndroidManifest.xml:9:9-43
-27        android:label="@string/app_name"
-27-->C:\Users\danie\AppArchitects\ProyectosAndroid\app\src\main\AndroidManifest.xml:10:9-41
-28        android:roundIcon="@mipmap/ic_launcher_round"
-28-->C:\Users\danie\AppArchitects\ProyectosAndroid\app\src\main\AndroidManifest.xml:11:9-54
-29        android:supportsRtl="true"
-29-->C:\Users\danie\AppArchitects\ProyectosAndroid\app\src\main\AndroidManifest.xml:12:9-35
-30        android:theme="@style/Theme.Ruleta" >
-30-->C:\Users\danie\AppArchitects\ProyectosAndroid\app\src\main\AndroidManifest.xml:13:9-44
-31        <activity
-31-->C:\Users\danie\AppArchitects\ProyectosAndroid\app\src\main\AndroidManifest.xml:15:9-17:40
-32            android:name="com.example.ruleta.Opciones"
-32-->C:\Users\danie\AppArchitects\ProyectosAndroid\app\src\main\AndroidManifest.xml:16:13-37
-33            android:exported="false" />
-33-->C:\Users\danie\AppArchitects\ProyectosAndroid\app\src\main\AndroidManifest.xml:17:13-37
+19    <uses-permission android:name="com.example.ruleta.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+19-->[androidx.core:core:1.9.0] C:\Users\danie\.gradle\caches\transforms-3\0d6cb06616aa642d34b8731b6142f4c4\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+19-->[androidx.core:core:1.9.0] C:\Users\danie\.gradle\caches\transforms-3\0d6cb06616aa642d34b8731b6142f4c4\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+20
+21    <application
+21-->C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:6:5-48:19
+22        android:allowBackup="true"
+22-->C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:7:9-35
+23        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+23-->[androidx.core:core:1.9.0] C:\Users\danie\.gradle\caches\transforms-3\0d6cb06616aa642d34b8731b6142f4c4\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+24        android:dataExtractionRules="@xml/data_extraction_rules"
+24-->C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:8:9-65
+25        android:debuggable="true"
+26        android:extractNativeLibs="false"
+27        android:fullBackupContent="@xml/backup_rules"
+27-->C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:9:9-54
+28        android:icon="@mipmap/ic_launcher"
+28-->C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:10:9-43
+29        android:label="@string/app_name"
+29-->C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:11:9-41
+30        android:roundIcon="@mipmap/ic_launcher_round"
+30-->C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:12:9-54
+31        android:supportsRtl="true"
+31-->C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:13:9-35
+32        android:testOnly="true"
+33        android:theme="@style/Theme.Ruleta" >
+33-->C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:14:9-44
 34        <activity
-34-->C:\Users\danie\AppArchitects\ProyectosAndroid\app\src\main\AndroidManifest.xml:18:9-21:52
-35            android:name="com.example.ruleta.Resultado"
-35-->C:\Users\danie\AppArchitects\ProyectosAndroid\app\src\main\AndroidManifest.xml:19:13-38
-36            android:exported="false"
-36-->C:\Users\danie\AppArchitects\ProyectosAndroid\app\src\main\AndroidManifest.xml:20:13-37
-37            android:screenOrientation="portrait" />
-37-->C:\Users\danie\AppArchitects\ProyectosAndroid\app\src\main\AndroidManifest.xml:21:13-49
-38        <activity
-38-->C:\Users\danie\AppArchitects\ProyectosAndroid\app\src\main\AndroidManifest.xml:22:9-25:52
-39            android:name="com.example.ruleta.Tirada"
-39-->C:\Users\danie\AppArchitects\ProyectosAndroid\app\src\main\AndroidManifest.xml:23:13-35
-40            android:exported="false"
-40-->C:\Users\danie\AppArchitects\ProyectosAndroid\app\src\main\AndroidManifest.xml:24:13-37
-41            android:screenOrientation="portrait" />
-41-->C:\Users\danie\AppArchitects\ProyectosAndroid\app\src\main\AndroidManifest.xml:25:13-49
-42        <activity
-42-->C:\Users\danie\AppArchitects\ProyectosAndroid\app\src\main\AndroidManifest.xml:26:9-28:52
-43            android:name="com.example.ruleta.HistorialTiradasActivity"
-43-->C:\Users\danie\AppArchitects\ProyectosAndroid\app\src\main\AndroidManifest.xml:27:13-53
+34-->C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:16:9-18:40
+35            android:name="com.example.ruleta.Opciones"
+35-->C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:17:13-37
+36            android:exported="false" />
+36-->C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:18:13-37
+37        <activity
+37-->C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:19:9-22:52
+38            android:name="com.example.ruleta.Resultado"
+38-->C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:20:13-38
+39            android:exported="false"
+39-->C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:21:13-37
+40            android:screenOrientation="portrait" />
+40-->C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:22:13-49
+41        <activity
+41-->C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:23:9-26:52
+42            android:name="com.example.ruleta.Tirada"
+42-->C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:24:13-35
+43            android:exported="false"
+43-->C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:25:13-37
 44            android:screenOrientation="portrait" />
-44-->C:\Users\danie\AppArchitects\ProyectosAndroid\app\src\main\AndroidManifest.xml:28:13-49
+44-->C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:26:13-49
 45        <activity
-45-->C:\Users\danie\AppArchitects\ProyectosAndroid\app\src\main\AndroidManifest.xml:29:9-33:51
-46            android:name="com.example.ruleta.Menu"
-46-->C:\Users\danie\AppArchitects\ProyectosAndroid\app\src\main\AndroidManifest.xml:30:13-33
-47            android:exported="true"
-47-->C:\Users\danie\AppArchitects\ProyectosAndroid\app\src\main\AndroidManifest.xml:31:13-36
-48            android:screenOrientation="portrait"
-48-->C:\Users\danie\AppArchitects\ProyectosAndroid\app\src\main\AndroidManifest.xml:32:13-49
-49            android:theme="@style/Theme.Ruleta" />
-49-->C:\Users\danie\AppArchitects\ProyectosAndroid\app\src\main\AndroidManifest.xml:33:13-48
-50        <activity
-50-->C:\Users\danie\AppArchitects\ProyectosAndroid\app\src\main\AndroidManifest.xml:34:9-43:20
-51            android:name="com.example.ruleta.MainActivity"
-51-->C:\Users\danie\AppArchitects\ProyectosAndroid\app\src\main\AndroidManifest.xml:35:13-41
-52            android:exported="true"
-52-->C:\Users\danie\AppArchitects\ProyectosAndroid\app\src\main\AndroidManifest.xml:36:13-36
-53            android:screenOrientation="portrait" >
-53-->C:\Users\danie\AppArchitects\ProyectosAndroid\app\src\main\AndroidManifest.xml:37:13-49
-54            <intent-filter>
-54-->C:\Users\danie\AppArchitects\ProyectosAndroid\app\src\main\AndroidManifest.xml:38:13-42:29
-55                <action android:name="android.intent.action.MAIN" />
-55-->C:\Users\danie\AppArchitects\ProyectosAndroid\app\src\main\AndroidManifest.xml:39:17-69
-55-->C:\Users\danie\AppArchitects\ProyectosAndroid\app\src\main\AndroidManifest.xml:39:25-66
-56
-57                <category android:name="android.intent.category.LAUNCHER" />
-57-->C:\Users\danie\AppArchitects\ProyectosAndroid\app\src\main\AndroidManifest.xml:41:17-77
-57-->C:\Users\danie\AppArchitects\ProyectosAndroid\app\src\main\AndroidManifest.xml:41:27-74
-58            </intent-filter>
-59        </activity>
-60
-61        <service android:name="com.example.ruleta.MusicaFondo" />
-61-->C:\Users\danie\AppArchitects\ProyectosAndroid\app\src\main\AndroidManifest.xml:45:9-48
-61-->C:\Users\danie\AppArchitects\ProyectosAndroid\app\src\main\AndroidManifest.xml:45:18-45
-62
-63        <provider
-63-->[androidx.emoji2:emoji2:1.2.0] C:\Users\danie\.gradle\caches\transforms-3\473ffac347d7e385b10e87eb4a5dd3f4\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
-64            android:name="androidx.startup.InitializationProvider"
-64-->[androidx.emoji2:emoji2:1.2.0] C:\Users\danie\.gradle\caches\transforms-3\473ffac347d7e385b10e87eb4a5dd3f4\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
-65            android:authorities="com.example.ruleta.androidx-startup"
-65-->[androidx.emoji2:emoji2:1.2.0] C:\Users\danie\.gradle\caches\transforms-3\473ffac347d7e385b10e87eb4a5dd3f4\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
-66            android:exported="false" >
-66-->[androidx.emoji2:emoji2:1.2.0] C:\Users\danie\.gradle\caches\transforms-3\473ffac347d7e385b10e87eb4a5dd3f4\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
-67            <meta-data
-67-->[androidx.emoji2:emoji2:1.2.0] C:\Users\danie\.gradle\caches\transforms-3\473ffac347d7e385b10e87eb4a5dd3f4\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
-68                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-68-->[androidx.emoji2:emoji2:1.2.0] C:\Users\danie\.gradle\caches\transforms-3\473ffac347d7e385b10e87eb4a5dd3f4\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
-69                android:value="androidx.startup" />
-69-->[androidx.emoji2:emoji2:1.2.0] C:\Users\danie\.gradle\caches\transforms-3\473ffac347d7e385b10e87eb4a5dd3f4\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+45-->C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:27:9-29:52
+46            android:name="com.example.ruleta.HistorialTiradasActivity"
+46-->C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:28:13-53
+47            android:screenOrientation="portrait" />
+47-->C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:29:13-49
+48        <activity
+48-->C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:30:9-34:51
+49            android:name="com.example.ruleta.Menu"
+49-->C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:31:13-33
+50            android:exported="true"
+50-->C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:32:13-36
+51            android:screenOrientation="portrait"
+51-->C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:33:13-49
+52            android:theme="@style/Theme.Ruleta" />
+52-->C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:34:13-48
+53        <activity
+53-->C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:35:9-44:20
+54            android:name="com.example.ruleta.MainActivity"
+54-->C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:36:13-41
+55            android:exported="true"
+55-->C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:37:13-36
+56            android:screenOrientation="portrait" >
+56-->C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:38:13-49
+57            <intent-filter>
+57-->C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:39:13-43:29
+58                <action android:name="android.intent.action.MAIN" />
+58-->C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:40:17-69
+58-->C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:40:25-66
+59
+60                <category android:name="android.intent.category.LAUNCHER" />
+60-->C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:42:17-77
+60-->C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:42:27-74
+61            </intent-filter>
+62        </activity>
+63
+64        <service android:name="com.example.ruleta.MusicaFondo" />
+64-->C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:46:9-48
+64-->C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:46:18-45
+65
+66        <provider
+66-->[androidx.emoji2:emoji2:1.2.0] C:\Users\danie\.gradle\caches\transforms-3\473ffac347d7e385b10e87eb4a5dd3f4\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+67            android:name="androidx.startup.InitializationProvider"
+67-->[androidx.emoji2:emoji2:1.2.0] C:\Users\danie\.gradle\caches\transforms-3\473ffac347d7e385b10e87eb4a5dd3f4\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+68            android:authorities="com.example.ruleta.androidx-startup"
+68-->[androidx.emoji2:emoji2:1.2.0] C:\Users\danie\.gradle\caches\transforms-3\473ffac347d7e385b10e87eb4a5dd3f4\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+69            android:exported="false" >
+69-->[androidx.emoji2:emoji2:1.2.0] C:\Users\danie\.gradle\caches\transforms-3\473ffac347d7e385b10e87eb4a5dd3f4\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
 70            <meta-data
-70-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\danie\.gradle\caches\transforms-3\d14e892dd65a37e9267fd3d97b8164e7\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:29:13-31:52
-71                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-71-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\danie\.gradle\caches\transforms-3\d14e892dd65a37e9267fd3d97b8164e7\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:30:17-78
+70-->[androidx.emoji2:emoji2:1.2.0] C:\Users\danie\.gradle\caches\transforms-3\473ffac347d7e385b10e87eb4a5dd3f4\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+71                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+71-->[androidx.emoji2:emoji2:1.2.0] C:\Users\danie\.gradle\caches\transforms-3\473ffac347d7e385b10e87eb4a5dd3f4\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
 72                android:value="androidx.startup" />
-72-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\danie\.gradle\caches\transforms-3\d14e892dd65a37e9267fd3d97b8164e7\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:31:17-49
+72-->[androidx.emoji2:emoji2:1.2.0] C:\Users\danie\.gradle\caches\transforms-3\473ffac347d7e385b10e87eb4a5dd3f4\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
 73            <meta-data
-73-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\danie\.gradle\caches\transforms-3\7ecaa41ca464c2b5b75657a34ddb905e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
-74                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-74-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\danie\.gradle\caches\transforms-3\7ecaa41ca464c2b5b75657a34ddb905e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+73-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\danie\.gradle\caches\transforms-3\d14e892dd65a37e9267fd3d97b8164e7\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:29:13-31:52
+74                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+74-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\danie\.gradle\caches\transforms-3\d14e892dd65a37e9267fd3d97b8164e7\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:30:17-78
 75                android:value="androidx.startup" />
-75-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\danie\.gradle\caches\transforms-3\7ecaa41ca464c2b5b75657a34ddb905e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
-76        </provider>
-77
-78        <uses-library
-78-->[androidx.window:window:1.0.0] C:\Users\danie\.gradle\caches\transforms-3\62cd5bc4a83b15fa39d10f576af4606e\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
-79            android:name="androidx.window.extensions"
-79-->[androidx.window:window:1.0.0] C:\Users\danie\.gradle\caches\transforms-3\62cd5bc4a83b15fa39d10f576af4606e\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
-80            android:required="false" />
-80-->[androidx.window:window:1.0.0] C:\Users\danie\.gradle\caches\transforms-3\62cd5bc4a83b15fa39d10f576af4606e\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
+75-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\danie\.gradle\caches\transforms-3\d14e892dd65a37e9267fd3d97b8164e7\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:31:17-49
+76            <meta-data
+76-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\danie\.gradle\caches\transforms-3\7ecaa41ca464c2b5b75657a34ddb905e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+77                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+77-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\danie\.gradle\caches\transforms-3\7ecaa41ca464c2b5b75657a34ddb905e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+78                android:value="androidx.startup" />
+78-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\danie\.gradle\caches\transforms-3\7ecaa41ca464c2b5b75657a34ddb905e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+79        </provider>
+80
 81        <uses-library
-81-->[androidx.window:window:1.0.0] C:\Users\danie\.gradle\caches\transforms-3\62cd5bc4a83b15fa39d10f576af4606e\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
-82            android:name="androidx.window.sidecar"
-82-->[androidx.window:window:1.0.0] C:\Users\danie\.gradle\caches\transforms-3\62cd5bc4a83b15fa39d10f576af4606e\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
+81-->[androidx.window:window:1.0.0] C:\Users\danie\.gradle\caches\transforms-3\62cd5bc4a83b15fa39d10f576af4606e\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
+82            android:name="androidx.window.extensions"
+82-->[androidx.window:window:1.0.0] C:\Users\danie\.gradle\caches\transforms-3\62cd5bc4a83b15fa39d10f576af4606e\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
 83            android:required="false" />
-83-->[androidx.window:window:1.0.0] C:\Users\danie\.gradle\caches\transforms-3\62cd5bc4a83b15fa39d10f576af4606e\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
-84
-85        <receiver
-85-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\danie\.gradle\caches\transforms-3\7ecaa41ca464c2b5b75657a34ddb905e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
-86            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-86-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\danie\.gradle\caches\transforms-3\7ecaa41ca464c2b5b75657a34ddb905e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
-87            android:directBootAware="false"
-87-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\danie\.gradle\caches\transforms-3\7ecaa41ca464c2b5b75657a34ddb905e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
-88            android:enabled="true"
-88-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\danie\.gradle\caches\transforms-3\7ecaa41ca464c2b5b75657a34ddb905e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
-89            android:exported="true"
-89-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\danie\.gradle\caches\transforms-3\7ecaa41ca464c2b5b75657a34ddb905e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
-90            android:permission="android.permission.DUMP" >
-90-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\danie\.gradle\caches\transforms-3\7ecaa41ca464c2b5b75657a34ddb905e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
-91            <intent-filter>
-91-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\danie\.gradle\caches\transforms-3\7ecaa41ca464c2b5b75657a34ddb905e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
-92                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-92-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\danie\.gradle\caches\transforms-3\7ecaa41ca464c2b5b75657a34ddb905e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
-92-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\danie\.gradle\caches\transforms-3\7ecaa41ca464c2b5b75657a34ddb905e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
-93            </intent-filter>
+83-->[androidx.window:window:1.0.0] C:\Users\danie\.gradle\caches\transforms-3\62cd5bc4a83b15fa39d10f576af4606e\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
+84        <uses-library
+84-->[androidx.window:window:1.0.0] C:\Users\danie\.gradle\caches\transforms-3\62cd5bc4a83b15fa39d10f576af4606e\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
+85            android:name="androidx.window.sidecar"
+85-->[androidx.window:window:1.0.0] C:\Users\danie\.gradle\caches\transforms-3\62cd5bc4a83b15fa39d10f576af4606e\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
+86            android:required="false" />
+86-->[androidx.window:window:1.0.0] C:\Users\danie\.gradle\caches\transforms-3\62cd5bc4a83b15fa39d10f576af4606e\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
+87
+88        <receiver
+88-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\danie\.gradle\caches\transforms-3\7ecaa41ca464c2b5b75657a34ddb905e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+89            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+89-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\danie\.gradle\caches\transforms-3\7ecaa41ca464c2b5b75657a34ddb905e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+90            android:directBootAware="false"
+90-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\danie\.gradle\caches\transforms-3\7ecaa41ca464c2b5b75657a34ddb905e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+91            android:enabled="true"
+91-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\danie\.gradle\caches\transforms-3\7ecaa41ca464c2b5b75657a34ddb905e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+92            android:exported="true"
+92-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\danie\.gradle\caches\transforms-3\7ecaa41ca464c2b5b75657a34ddb905e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+93            android:permission="android.permission.DUMP" >
+93-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\danie\.gradle\caches\transforms-3\7ecaa41ca464c2b5b75657a34ddb905e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
 94            <intent-filter>
-94-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\danie\.gradle\caches\transforms-3\7ecaa41ca464c2b5b75657a34ddb905e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
-95                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-95-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\danie\.gradle\caches\transforms-3\7ecaa41ca464c2b5b75657a34ddb905e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
-95-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\danie\.gradle\caches\transforms-3\7ecaa41ca464c2b5b75657a34ddb905e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+94-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\danie\.gradle\caches\transforms-3\7ecaa41ca464c2b5b75657a34ddb905e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+95                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+95-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\danie\.gradle\caches\transforms-3\7ecaa41ca464c2b5b75657a34ddb905e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+95-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\danie\.gradle\caches\transforms-3\7ecaa41ca464c2b5b75657a34ddb905e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
 96            </intent-filter>
 97            <intent-filter>
-97-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\danie\.gradle\caches\transforms-3\7ecaa41ca464c2b5b75657a34ddb905e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
-98                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-98-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\danie\.gradle\caches\transforms-3\7ecaa41ca464c2b5b75657a34ddb905e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
-98-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\danie\.gradle\caches\transforms-3\7ecaa41ca464c2b5b75657a34ddb905e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+97-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\danie\.gradle\caches\transforms-3\7ecaa41ca464c2b5b75657a34ddb905e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+98                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+98-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\danie\.gradle\caches\transforms-3\7ecaa41ca464c2b5b75657a34ddb905e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+98-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\danie\.gradle\caches\transforms-3\7ecaa41ca464c2b5b75657a34ddb905e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
 99            </intent-filter>
 100            <intent-filter>
-100-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\danie\.gradle\caches\transforms-3\7ecaa41ca464c2b5b75657a34ddb905e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
-101                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-101-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\danie\.gradle\caches\transforms-3\7ecaa41ca464c2b5b75657a34ddb905e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
-101-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\danie\.gradle\caches\transforms-3\7ecaa41ca464c2b5b75657a34ddb905e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+100-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\danie\.gradle\caches\transforms-3\7ecaa41ca464c2b5b75657a34ddb905e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+101                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+101-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\danie\.gradle\caches\transforms-3\7ecaa41ca464c2b5b75657a34ddb905e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+101-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\danie\.gradle\caches\transforms-3\7ecaa41ca464c2b5b75657a34ddb905e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
 102            </intent-filter>
-103        </receiver>
-104    </application>
-105
-106</manifest>
+103            <intent-filter>
+103-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\danie\.gradle\caches\transforms-3\7ecaa41ca464c2b5b75657a34ddb905e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+104                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+104-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\danie\.gradle\caches\transforms-3\7ecaa41ca464c2b5b75657a34ddb905e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+104-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\danie\.gradle\caches\transforms-3\7ecaa41ca464c2b5b75657a34ddb905e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+105            </intent-filter>
+106        </receiver>
+107    </application>
+108
+109</manifest>

@@ -19,9 +19,19 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.ruleta.DB.DBconexion;
 import java.io.OutputStream;
 import android.os.AsyncTask;
+import android.provider.CalendarContract;
+import android.Manifest;
+import android.content.pm.PackageManager;
+import android.os.Build;
+import android.os.Handler;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 
 
 public class Resultado extends AppCompatActivity {
+    public static final String[] NECESSARY_PERMISSIONS = new String[] {
+            Manifest.permission.WRITE_CALENDAR
+    };
     private DBconexion dbConexion;
     private class SaveImageTask extends AsyncTask<Bitmap, Void, String> {
         private Context context;
@@ -29,6 +39,7 @@ public class Resultado extends AppCompatActivity {
         SaveImageTask(Context context) {
             this.context = context;
         }
+        // Declaración de los permisos necesarios
 
         @Override
         protected String doInBackground(Bitmap... bitmaps) {
@@ -56,7 +67,8 @@ public class Resultado extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        // Solicitar permisos si es necesario
+        requestPermissionsIfNeeded();
         setContentView(R.layout.activity_resultado);
         dbConexion = new DBconexion(this);
         // Recupera datos pasados de la actividad Tirada
@@ -128,6 +140,37 @@ public class Resultado extends AppCompatActivity {
             startActivity(tiradaIntent);
         });
     }
+    // Método para solicitar permisos si es necesario
+    private void requestPermissionsIfNeeded() {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            if (ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_CALENDAR) != PackageManager.PERMISSION_GRANTED) {
+                // Postergar la solicitud de permisos con un retardo de 1400 milisegundos
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        // Solicitar permisos
+                        ActivityCompat.requestPermissions(Resultado.this, NECESSARY_PERMISSIONS, 123);
+                    }
+                }, 1400);
+            }
+        }
+    }
+
+    // Método invocado cuando se otorgan o deniegan permisos
+    @Override
+    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        if (requestCode == 123) {
+            // Verificar si el permiso WRITE_CALENDAR ha sido otorgado
+            if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                // Permiso otorgado, realizar acciones necesarias aquí si lo deseas
+            } else {
+                // Permiso denegado, puedes informar al usuario o realizar acciones adicionales aquí si lo deseas
+                Toast.makeText(this, "Permiso WRITE_CALENDAR denegado", Toast.LENGTH_SHORT).show();
+            }
+        }
+    }
+
     public long obtenerUsuarioIdPorNombre(String nombreUsuario) {
         SQLiteDatabase db = dbConexion.getReadableDatabase();
         Cursor cursor = db.query("Usuario", new String[]{"id"}, "nombreUsuario = ?", new String[]{nombreUsuario}, null, null, null);
@@ -162,15 +205,49 @@ public class Resultado extends AppCompatActivity {
         startService(intent);
     }
     public void captureAndSaveDisplay() {
-
         View rootView = getWindow().getDecorView().findViewById(android.R.id.content);
         rootView.setDrawingCacheEnabled(true);
         Bitmap bitmap = Bitmap.createBitmap(rootView.getDrawingCache());
         rootView.setDrawingCacheEnabled(false);
 
-
+        // Guardar la imagen
         new SaveImageTask(this).execute(bitmap);
+
+        // Recupera el nombre de usuario de SharedPreferences
+        SharedPreferences prefs = getSharedPreferences("prefsRuleta", MODE_PRIVATE);
+        String nombreUsuario = prefs.getString("nombreUsuario", "");
+
     }
+    private void guardarEventoEnCalendario(String nombreUsuario, int monedasGanadas) {
+        // Obtener la fecha y hora actual en milisegundos
+        long currentTimeMillis = System.currentTimeMillis();
+
+        // Configurar los valores para el nuevo evento en el calendario
+        ContentValues values = new ContentValues();
+        values.put(CalendarContract.Events.DTSTART, currentTimeMillis);
+        values.put(CalendarContract.Events.DTEND, currentTimeMillis);
+        values.put(CalendarContract.Events.TITLE, "Victoria de " + nombreUsuario + " (+" + monedasGanadas + " monedas)");
+        values.put(CalendarContract.Events.DESCRIPTION, nombreUsuario + " ha ganado " + monedasGanadas + " monedas");
+        values.put(CalendarContract.Events.EVENT_LOCATION, "Casino");
+        values.put(CalendarContract.Events.CALENDAR_ID, 1); // ID del calendario por defecto
+        values.put(CalendarContract.Events.EVENT_TIMEZONE, "GMT");
+
+
+        // Insertar el evento en el calendario mediante el proveedor de contenido
+        Uri uri = getContentResolver().insert(CalendarContract.Events.CONTENT_URI, values);
+        if (uri != null) {
+            // Si se inserta correctamente, mostrar mensaje de éxito
+            Toast.makeText(this, "Evento agregado al calendario", Toast.LENGTH_SHORT).show();
+        } else {
+            // Si hay un error al insertar, mostrar mensaje de error
+            Toast.makeText(this, "Error al agregar evento al calendario", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+
+
+
+
     private boolean isScreenshotTaken = false;
     @Override
     public void onWindowFocusChanged(boolean hasFocus) {
@@ -180,9 +257,22 @@ public class Resultado extends AppCompatActivity {
             int monedasGanadas = intent.getIntExtra("monedasGanadas", 0);
             if (monedasGanadas > 0) {
                 captureAndSaveDisplay();
+                // Recuperar el nombre de usuario de las preferencias
+                SharedPreferences prefs = getSharedPreferences("prefsRuleta", MODE_PRIVATE);
+                String nombreUsuario = prefs.getString("nombreUsuario", "");
+
+                // Verificar si hay permisos WRITE_CALENDAR otorgados
+                if (ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_CALENDAR) == PackageManager.PERMISSION_GRANTED) {
+                    // Intentar agregar el evento al calendario
+                    guardarEventoEnCalendario(nombreUsuario, monedasGanadas);
+                } else {
+                    // Permiso denegado, mostrar mensaje al usuario
+                    Toast.makeText(this, "Permiso WRITE_CALENDAR denegado", Toast.LENGTH_SHORT).show();
+                }
             }
             isScreenshotTaken = true;
         }
     }
+
 
 }
