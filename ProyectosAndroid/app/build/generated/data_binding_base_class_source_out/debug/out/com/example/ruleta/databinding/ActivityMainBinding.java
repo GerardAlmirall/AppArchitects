@@ -21,6 +21,9 @@ public final class ActivityMainBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
+  public final Button btnAyuda;
+
+  @NonNull
   public final Button btnInicioSesion;
 
   @NonNull
@@ -35,10 +38,11 @@ public final class ActivityMainBinding implements ViewBinding {
   @NonNull
   public final ConstraintLayout main;
 
-  private ActivityMainBinding(@NonNull ConstraintLayout rootView, @NonNull Button btnInicioSesion,
-      @NonNull Button btnOpciones, @NonNull Button btnSalir, @NonNull ImageView imageView,
-      @NonNull ConstraintLayout main) {
+  private ActivityMainBinding(@NonNull ConstraintLayout rootView, @NonNull Button btnAyuda,
+      @NonNull Button btnInicioSesion, @NonNull Button btnOpciones, @NonNull Button btnSalir,
+      @NonNull ImageView imageView, @NonNull ConstraintLayout main) {
     this.rootView = rootView;
+    this.btnAyuda = btnAyuda;
     this.btnInicioSesion = btnInicioSesion;
     this.btnOpciones = btnOpciones;
     this.btnSalir = btnSalir;
@@ -73,6 +77,12 @@ public final class ActivityMainBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.btnAyuda;
+      Button btnAyuda = ViewBindings.findChildViewById(rootView, id);
+      if (btnAyuda == null) {
+        break missingId;
+      }
+
       id = R.id.btnInicioSesion;
       Button btnInicioSesion = ViewBindings.findChildViewById(rootView, id);
       if (btnInicioSesion == null) {
@@ -99,8 +109,8 @@ public final class ActivityMainBinding implements ViewBinding {
 
       ConstraintLayout main = (ConstraintLayout) rootView;
 
-      return new ActivityMainBinding((ConstraintLayout) rootView, btnInicioSesion, btnOpciones,
-          btnSalir, imageView, main);
+      return new ActivityMainBinding((ConstraintLayout) rootView, btnAyuda, btnInicioSesion,
+          btnOpciones, btnSalir, imageView, main);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

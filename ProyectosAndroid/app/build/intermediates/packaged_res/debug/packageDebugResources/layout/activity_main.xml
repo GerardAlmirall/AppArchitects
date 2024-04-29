@@ -16,7 +16,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.494"
+        app:layout_constraintVertical_bias="0.482"
         app:srcCompat="@drawable/ruleta"
         tools:ignore="MissingConstraints" />
 
@@ -24,7 +24,7 @@
         android:id="@+id/btnInicioSesion"
         android:layout_width="148dp"
         android:layout_height="51dp"
-        android:layout_marginTop="500dp"
+        android:layout_marginTop="412dp"
         android:backgroundTint="#20001D"
         android:text="Iniciar Sesión"
         app:cornerRadius="0dp"
@@ -40,7 +40,7 @@
         android:id="@+id/btnSalir"
         android:layout_width="148dp"
         android:layout_height="51dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="24dp"
         android:backgroundTint="#20001D"
         android:text="Salir"
         app:cornerRadius="0dp"
@@ -56,7 +56,7 @@
         android:id="@+id/btnOpciones"
         android:layout_width="148dp"
         android:layout_height="51dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="24dp"
         android:backgroundTint="#20001D"
         android:text="Opciones"
         app:cornerRadius="0dp"
@@ -67,5 +67,19 @@
         app:strokeColor="#FFB800"
         app:strokeWidth="2dp" />
 
+    <Button
+        android:id="@+id/btnAyuda"
+        android:layout_width="148dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#20001D"
+        android:text="Ayuda"
+        app:cornerRadius="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSalir"
+        app:strokeColor="#FFB800"
+        app:strokeWidth="2dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
