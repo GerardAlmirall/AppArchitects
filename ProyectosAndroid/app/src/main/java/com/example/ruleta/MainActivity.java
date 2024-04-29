@@ -90,7 +90,18 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(MainActivity.this, Opciones.class);
             startActivity(intent);
         });
+
+        Button btnAyuda = findViewById(R.id.btnAyuda);
+        btnAyuda.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, AyudaActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
+
     @Override
     protected void onPause() {
         super.onPause();

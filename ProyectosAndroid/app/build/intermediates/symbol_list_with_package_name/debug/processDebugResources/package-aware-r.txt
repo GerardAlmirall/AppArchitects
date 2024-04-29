@@ -3232,6 +3232,7 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
+id btnAyuda
 id btnIniciarPartida
 id btnInicioSesion
 id btnOpciones
@@ -3670,6 +3671,7 @@ id view_tree_saved_state_registry_owner
 id view_tree_view_model_store_owner
 id visible
 id visible_removing_fragment_view_tag
+id webView
 id west
 id withText
 id with_icon
@@ -3794,6 +3796,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_ayuda
 layout activity_historial_tiradas
 layout activity_main
 layout activity_menu
@@ -4042,6 +4045,8 @@ string mtrl_timepicker_confirm
 string nav_app_bar_navigate_up_description
 string nav_app_bar_open_drawer_description
 string next
+string notification_channel_description
+string notification_channel_name
 string password_toggle_content_description
 string path_password_eye
 string path_password_eye_mask_strike_through

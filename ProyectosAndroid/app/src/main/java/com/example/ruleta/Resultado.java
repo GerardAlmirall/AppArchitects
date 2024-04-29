@@ -9,6 +9,7 @@ import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -26,17 +27,26 @@ import android.os.Build;
 import android.os.Handler;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
+import androidx.core.app.NotificationCompat;
+import androidx.core.app.NotificationManagerCompat;
+
+
 
 
 public class Resultado extends AppCompatActivity {
-    public static final String[] NECESSARY_PERMISSIONS = new String[] {
+    private static final String NOTIFICATION_CHANNEL_ID = "channel_id";
+    private static final int NOTIFICATION_ID = 1234;
+    public static final String[] NECESSARY_PERMISSIONS = new String[]{
             Manifest.permission.WRITE_CALENDAR
     };
     private DBconexion dbConexion;
-    private class SaveImageTask extends AsyncTask<Bitmap, Void, String> {
+
+    public class SaveImageTask extends AsyncTask<Bitmap, Void, String> {
         private Context context;
 
-        SaveImageTask(Context context) {
+        public SaveImageTask(Context context) {
             this.context = context;
         }
         // Declaración de los permisos necesarios
@@ -71,6 +81,7 @@ public class Resultado extends AppCompatActivity {
         requestPermissionsIfNeeded();
         setContentView(R.layout.activity_resultado);
         dbConexion = new DBconexion(this);
+
         // Recupera datos pasados de la actividad Tirada
         Intent intent = getIntent();
         int monedasGanadas = intent.getIntExtra("monedasGanadas", 0);
@@ -82,7 +93,10 @@ public class Resultado extends AppCompatActivity {
         long usuarioId = obtenerUsuarioIdPorNombre(nombreUsuario);
         TextView textUser = findViewById(R.id.textUser);
         textUser.setText(String.valueOf(nombreUsuario));
+
+        // Agregar esta línea para obtener monedasTotales
         int monedasTotales = prefs.getInt(nombreUsuario + "_monedas", 100);
+
         TiradaClase nuevaTirada = new TiradaClase(
                 0, // Pasamos 0 si el ID es autoincrementable
                 monedasGanadas,
@@ -93,7 +107,6 @@ public class Resultado extends AppCompatActivity {
         );
 
         // Guarda la nueva tirada en la base de datos
-        DBconexion dbConexion = new DBconexion(this);
         dbConexion.insertarTirada(nuevaTirada);
 
         // Configura los elementos de la UI con los datos recuperados
@@ -112,10 +125,8 @@ public class Resultado extends AppCompatActivity {
         // Configura el texto dependiendo si el usuario ha ganado o perdido
         if (monedasGanadas > 0) {
             txtHasGanado.setText("Has ganado:");
-
         } else {
             txtHasGanado.setText("Has perdido:");
-
         }
 
         Button btnRetirarse = findViewById(R.id.btnRetirarse);
@@ -140,6 +151,8 @@ public class Resultado extends AppCompatActivity {
             startActivity(tiradaIntent);
         });
     }
+
+
     // Método para solicitar permisos si es necesario
     private void requestPermissionsIfNeeded() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
@@ -245,6 +258,35 @@ public class Resultado extends AppCompatActivity {
     }
 
 
+    private String obtenerIdCalendarioGoogle() {
+        String idCalendarioGoogle = null;
+        Cursor cursor = getContentResolver().query(
+                CalendarContract.Calendars.CONTENT_URI,
+                new String[] {CalendarContract.Calendars._ID}, // Obtener solo la columna _ID
+                null,
+                null,
+                null
+        );
+
+        if (cursor != null) {
+            try {
+                // Verificar si el cursor tiene al menos una fila
+                if (cursor.moveToFirst()) {
+                    // Intentar obtener el valor del _ID
+                    int columnIndex = cursor.getColumnIndex(CalendarContract.Calendars._ID);
+                    if (columnIndex != -1) {
+                        idCalendarioGoogle = cursor.getString(columnIndex);
+                    } else {
+                        Log.e("Error", "No se encontró la columna _ID en el cursor");
+                    }
+                }
+            } finally {
+                cursor.close();
+            }
+        }
+
+        return idCalendarioGoogle;
+    }
 
 
 
