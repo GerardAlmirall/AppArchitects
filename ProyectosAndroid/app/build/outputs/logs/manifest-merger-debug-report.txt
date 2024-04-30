@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:2:1-56:12
-INJECTED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:2:1-56:12
-INJECTED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:2:1-56:12
-INJECTED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:2:1-56:12
+ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:2:1-57:12
+INJECTED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:2:1-57:12
+INJECTED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:2:1-57:12
+INJECTED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:2:1-57:12
 MERGED from [androidx.databinding:viewbinding:8.3.0] C:\Users\danie\.gradle\caches\transforms-3\1212328e27b7029fb9589fd9717914d0\transformed\viewbinding-8.3.0\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.navigation:navigation-common:2.6.0] C:\Users\danie\.gradle\caches\transforms-3\052c6ca85d90ace3c0c2b629e6b900ae\transformed\navigation-common-2.6.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.navigation:navigation-runtime:2.6.0] C:\Users\danie\.gradle\caches\transforms-3\ef405d67235e34df6d5b5d01f5c05ddb\transformed\navigation-runtime-2.6.0\AndroidManifest.xml:17:1-22:12
@@ -69,21 +69,25 @@ MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\danie\.
 		INJECTED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:5:5-79
+	android:name
+		ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:5:22-76
 uses-permission#android.permission.POST_NOTIFICATIONS
-ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:5:5-77
+ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:6:5-77
 	android:name
-		ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:5:22-74
+		ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:6:22-74
 uses-permission#android.permission.WRITE_CALENDAR
-ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:6:5-73
+ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:7:5-73
 	android:name
-		ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:6:22-70
+		ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:7:22-70
 uses-permission#android.permission.READ_CALENDAR
-ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:7:5-72
+ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:8:5-72
 	android:name
-		ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:7:22-69
+		ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:8:22-69
 application
-ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:8:5-52:19
-INJECTED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:8:5-52:19
+ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:9:5-53:19
+INJECTED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:9:5-53:19
 MERGED from [com.google.android.material:material:1.11.0] C:\Users\danie\.gradle\caches\transforms-3\b85327fcffebdebffaf9ddf8b7d560bc\transformed\material-1.11.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.11.0] C:\Users\danie\.gradle\caches\transforms-3\b85327fcffebdebffaf9ddf8b7d560bc\transformed\material-1.11.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\danie\.gradle\caches\transforms-3\898e6503fb3a69a907b3ba3a5c95317c\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
@@ -107,95 +111,95 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\da
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.9.0] C:\Users\danie\.gradle\caches\transforms-3\0d6cb06616aa642d34b8731b6142f4c4\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:15:9-35
+		ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:16:9-35
 	android:label
-		ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:13:9-41
+		ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:14:9-41
 	android:fullBackupContent
-		ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:11:9-54
+		ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:12:9-54
 	android:roundIcon
-		ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:14:9-54
+		ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:15:9-54
 	tools:targetApi
-		ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:17:9-29
+		ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:18:9-29
 	android:icon
-		ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:12:9-43
+		ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:13:9-43
 	android:allowBackup
-		ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:9:9-35
+		ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:10:9-35
 	android:theme
-		ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:16:9-44
+		ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:17:9-44
 	android:dataExtractionRules
-		ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:10:9-65
+		ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:11:9-65
 activity#com.example.ruleta.Opciones
-ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:18:9-20:40
+ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:19:9-21:40
 	android:exported
+		ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:21:13-37
+	android:name
 		ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:20:13-37
-	android:name
-		ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:19:13-37
 activity#com.example.ruleta.Resultado
-ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:21:9-24:52
+ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:22:9-25:52
 	android:screenOrientation
-		ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:24:13-49
+		ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:25:13-49
 	android:exported
-		ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:23:13-37
+		ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:24:13-37
 	android:name
-		ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:22:13-38
+		ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:23:13-38
 activity#com.example.ruleta.Tirada
-ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:25:9-28:52
+ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:26:9-29:52
 	android:screenOrientation
-		ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:28:13-49
+		ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:29:13-49
 	android:exported
-		ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:27:13-37
+		ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:28:13-37
 	android:name
-		ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:26:13-35
+		ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:27:13-35
 activity#com.example.ruleta.HistorialTiradasActivity
-ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:29:9-31:52
+ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:30:9-32:52
 	android:screenOrientation
-		ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:31:13-49
+		ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:32:13-49
 	android:name
-		ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:30:13-53
+		ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:31:13-53
 activity#com.example.ruleta.Menu
-ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:32:9-36:51
+ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:33:9-37:51
 	android:screenOrientation
-		ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:35:13-49
+		ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:36:13-49
 	android:exported
-		ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:34:13-36
+		ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:35:13-36
 	android:theme
-		ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:36:13-48
+		ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:37:13-48
 	android:name
-		ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:33:13-33
+		ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:34:13-33
 activity#com.example.ruleta.MainActivity
-ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:37:9-46:20
+ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:38:9-47:20
 	android:screenOrientation
-		ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:40:13-49
+		ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:41:13-49
 	android:exported
-		ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:39:13-36
+		ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:40:13-36
 	android:name
-		ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:38:13-41
+		ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:39:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:41:13-45:29
+ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:42:13-46:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:42:17-69
+ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:43:17-69
 	android:name
-		ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:42:25-66
+		ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:43:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:44:17-77
+ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:45:17-77
 	android:name
-		ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:44:27-74
+		ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:45:27-74
 activity#com.example.ruleta.AyudaActivity
-ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:47:9-51
+ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:48:9-51
 	android:name
-		ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:47:19-48
+		ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:48:19-48
 service#com.example.ruleta.MusicaFondo
-ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:50:9-48
+ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:51:9-48
 	android:name
-		ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:50:18-45
+		ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:51:18-45
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:53:5-80
+ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:54:5-80
 	android:name
-		ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:53:22-78
+		ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:54:22-78
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:54:5-67
+ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:55:5-67
 	android:name
-		ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:54:22-64
+		ADDED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml:55:22-64
 uses-sdk
 INJECTED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\AndroidManifest.xml

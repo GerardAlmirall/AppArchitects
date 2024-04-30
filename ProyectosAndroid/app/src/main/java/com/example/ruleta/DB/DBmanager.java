@@ -61,42 +61,23 @@ public class DBmanager {
         cursor.close(); // Asegúrate de cerrar el cursor después de usarlo
         return id;
     }
-   /*
-public List<Usuario> obtenerUsuariosOrdenadosPorMonedas() {
-    List<Usuario> usuarios = new ArrayList<>();
-    SQLiteDatabase db = dbConexion.getReadableDatabase();
 
-    String[] projection = {
-            "id",
-            "nombreUsuario",
-            "monedasTotales"
-    };
+    public void insertarUbicacionJugador(String nombreUsuario, double latitud, double longitud) {
+        SQLiteDatabase db = dbConexion.getWritableDatabase();
+        ContentValues values = new ContentValues();
+        values.put("nombreUsuario", nombreUsuario);
+        values.put("latitud", latitud);
+        values.put("longitud", longitud);
 
-    String orderBy = "monedasTotales DESC"; // Ordenar por monedasTotales de forma descendente
+        long resultado = db.insert("UbicacionJugador", null, values);
+        if (resultado == -1) {
+            Log.e("DBmanager", "Error al insertar ubicación del jugador en la base de datos.");
+        } else {
+            Log.d("DBmanager", "Ubicación del jugador insertada correctamente en la base de datos.");
+        }
 
-    Cursor cursor = db.query(
-            "Usuario",
-            projection,
-            null,
-            null,
-            null,
-            null,
-            orderBy);
-
-    while (cursor.moveToNext()) {
-        long id = cursor.getLong(cursor.getColumnIndexOrThrow("id"));
-        String nombreUsuario = cursor.getString(cursor.getColumnIndexOrThrow("nombreUsuario"));
-        int monedasTotales = cursor.getInt(cursor.getColumnIndexOrThrow("monedasTotales"));
-
-        usuarios.add(new Usuario((int)id, nombreUsuario, monedasTotales));
+        db.close();
     }
-    cursor.close();
-
-    return usuarios;
-}
-*/
-
-
 
     public Observable<List<TiradaClase>> obtenerHistorialDeUsuario(long usuarioId) {
         return Observable.create(emitter -> {
