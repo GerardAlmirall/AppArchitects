@@ -35,15 +35,7 @@ public class DBconexion extends SQLiteOpenHelper {
                 "monedasTotales INTEGER," +
                 "FOREIGN KEY(usuarioId) REFERENCES Usuario(id))";
         db.execSQL(CREAR_TBL_TIRADA);
-        // Crear la tabla para la ubicación del jugador
-        String CREAR_TBL_UBICACION_JUGADOR = "CREATE TABLE UbicacionJugador (" +
-                "id INTEGER PRIMARY KEY AUTOINCREMENT," +
-                "nombreUsuario TEXT," +
-                "latitud REAL," +
-                "longitud REAL)";
-        db.execSQL(CREAR_TBL_UBICACION_JUGADOR);
     }
-
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
