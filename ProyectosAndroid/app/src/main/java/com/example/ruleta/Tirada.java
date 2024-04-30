@@ -166,12 +166,16 @@ public class Tirada extends AppCompatActivity {
 
     private void calcularPremio(int premioSeleccionado, String nombreUsuario, int apuesta) {
         double multiplicador = 0;
+        boolean esVictoria = false; // Variable para verificar si se ha ganado
+
         switch (premioSeleccionado) {
             case 1:
                 multiplicador = 10;
+                esVictoria = true;
                 break;
             case 2:
                 multiplicador = 2;
+                esVictoria = true;
                 break;
             case 3:
                 multiplicador = 0.2;
@@ -181,21 +185,34 @@ public class Tirada extends AppCompatActivity {
                 break;
             case 5:
                 multiplicador = 1.5;
+                esVictoria = true;
                 break;
             case 6:
                 multiplicador = 0.5;
                 break;
             case 7:
                 multiplicador = 5;
+                esVictoria = true;
                 break;
             case 8:
                 multiplicador = 0.666;
                 break;
             default:
         }
+
+        // Calcular el resultado
         resultado = (int) (apuesta * multiplicador) - apuesta;
         int monedasTotales = obtenerMonedasTotales(nombreUsuario) + resultado;
         actualizarMonedasTotales(nombreUsuario, monedasTotales);
+
+        // Mostrar mensaje de victoria si es el caso
+        if (esVictoria) {
+            mostrarMensajeVictoria();
+        }
+    }
+
+    private void mostrarMensajeVictoria() {
+        runOnUiThread(() -> Toast.makeText(Tirada.this, "¡Has ganado! ¡Enhorabuena!", Toast.LENGTH_SHORT).show());
     }
 
     private int obtenerMonedasTotales(String nombreUsuario) {
