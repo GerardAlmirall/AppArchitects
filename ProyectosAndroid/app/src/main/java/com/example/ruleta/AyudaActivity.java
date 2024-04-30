@@ -20,7 +20,7 @@ public class AyudaActivity extends AppCompatActivity {
         webView.getSettings().setJavaScriptEnabled(true);
 
         // Carga la URL de la página de ayuda
-        webView.loadUrl("https://sites.google.com/uoc.edu/apparchitects?usp=sharing");
+        webView.loadUrl("https://sites.google.com/d/1to59FYNrisfHnvrTNs8h3CwIw32oRi_o/p/1dIK1vKyj-e7R30xIql-TTiOszyFnvulb/edit");
 
         // Configura un WebViewClient para manejar las interacciones dentro del WebView
         webView.setWebViewClient(new WebViewClient());
