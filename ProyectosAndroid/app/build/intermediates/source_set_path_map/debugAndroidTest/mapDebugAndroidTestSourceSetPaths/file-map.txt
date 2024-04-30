@@ -1,6 +1,6 @@
 com.example.ruleta.test.app-annotation-experimental-1.3.0-0 C:\Users\danie\.gradle\caches\transforms-3\91dd5eb084409c600a2dc7f8caee6bdc\transformed\annotation-experimental-1.3.0\res
 com.example.ruleta.test.app-core-1.5.0-1 C:\Users\danie\.gradle\caches\transforms-3\96b5adb775b00f94e0d8a911c97a0071\transformed\core-1.5.0\res
-com.example.ruleta.test.app-androidTest-2 C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\build\generated\res\resValues\androidTest\debug
-com.example.ruleta.test.app-mergeDebugAndroidTestResources-3 C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
-com.example.ruleta.test.app-mergeDebugAndroidTestResources-4 C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
-com.example.ruleta.test.app-debugAndroidTest-5 C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\build\intermediates\merged_res\debugAndroidTest\mergeDebugAndroidTestResources
+com.example.ruleta.test.app-androidTest-2 C:\Users\danie\AppArchitects\ProyectosAndroid\app\build\generated\res\resValues\androidTest\debug
+com.example.ruleta.test.app-mergeDebugAndroidTestResources-3 C:\Users\danie\AppArchitects\ProyectosAndroid\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.example.ruleta.test.app-mergeDebugAndroidTestResources-4 C:\Users\danie\AppArchitects\ProyectosAndroid\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.example.ruleta.test.app-debugAndroidTest-5 C:\Users\danie\AppArchitects\ProyectosAndroid\app\build\intermediates\merged_res\debugAndroidTest\mergeDebugAndroidTestResources

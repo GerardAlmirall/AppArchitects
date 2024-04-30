@@ -37,10 +37,10 @@ com.example.ruleta.app-viewpager2-1.0.0-35 C:\Users\danie\.gradle\caches\transfo
 com.example.ruleta.app-startup-runtime-1.1.1-36 C:\Users\danie\.gradle\caches\transforms-3\faba6f065257b4a57e5b7b073232d087\transformed\startup-runtime-1.1.1\res
 com.example.ruleta.app-navigation-fragment-2.6.0-37 C:\Users\danie\.gradle\caches\transforms-3\fdf567b99fc3af5dd4e416e584187b84\transformed\navigation-fragment-2.6.0\res
 com.example.ruleta.app-savedstate-1.2.1-38 C:\Users\danie\.gradle\caches\transforms-3\fe1817eb9c1e325c50c00936e44adc9f\transformed\savedstate-1.2.1\res
-com.example.ruleta.app-pngs-39 C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\build\generated\res\pngs\debug
-com.example.ruleta.app-resValues-40 C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\build\generated\res\resValues\debug
-com.example.ruleta.app-packageDebugResources-41 C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
-com.example.ruleta.app-packageDebugResources-42 C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
-com.example.ruleta.app-debug-43 C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\build\intermediates\merged_res\debug\mergeDebugResources
-com.example.ruleta.app-debug-44 C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\debug\res
-com.example.ruleta.app-main-45 C:\Users\danie\AndroidStudioProjects\ProyectosAndroid\app\src\main\res
+com.example.ruleta.app-pngs-39 C:\Users\danie\AppArchitects\ProyectosAndroid\app\build\generated\res\pngs\debug
+com.example.ruleta.app-resValues-40 C:\Users\danie\AppArchitects\ProyectosAndroid\app\build\generated\res\resValues\debug
+com.example.ruleta.app-packageDebugResources-41 C:\Users\danie\AppArchitects\ProyectosAndroid\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.example.ruleta.app-packageDebugResources-42 C:\Users\danie\AppArchitects\ProyectosAndroid\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.example.ruleta.app-debug-43 C:\Users\danie\AppArchitects\ProyectosAndroid\app\build\intermediates\merged_res\debug\mergeDebugResources
+com.example.ruleta.app-debug-44 C:\Users\danie\AppArchitects\ProyectosAndroid\app\src\debug\res
+com.example.ruleta.app-main-45 C:\Users\danie\AppArchitects\ProyectosAndroid\app\src\main\res

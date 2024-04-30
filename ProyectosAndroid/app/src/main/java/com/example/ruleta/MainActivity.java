@@ -5,7 +5,6 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
-import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.text.InputType;
 import android.util.Log;
@@ -13,16 +12,22 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
-
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
-
 import com.example.ruleta.DB.DBmanager;
+import android.Manifest;
+import android.content.Context;
+import android.content.pm.PackageManager;
+import android.location.Location;
+import android.location.LocationManager;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 
 public class MainActivity extends AppCompatActivity {
 
     private DBmanager dbManager;
-
+    // Constante para el código de solicitud de permiso de ubicación
+    private static final int REQUEST_CODE_LOCATION_PERMISSION = 1001;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,12 +40,11 @@ public class MainActivity extends AppCompatActivity {
             startService(musicServiceIntent);
         }
 
-        // setupButtons();
-
         Button btnInicioSesion = findViewById(R.id.btnInicioSesion);
         btnInicioSesion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                // Aquí se muestra el diálogo para ingresar el nombre de usuario
                 final EditText input = new EditText(MainActivity.this);
                 input.setInputType(InputType.TYPE_CLASS_TEXT);
                 input.setHint("Nombre de Usuario");
@@ -51,24 +55,30 @@ public class MainActivity extends AppCompatActivity {
                         .setView(input)
                         .setPositiveButton("Aceptar", new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int whichButton) {
-                                String nombreUsuario = input.getText().toString();
+                                final String nombreUsuario = input.getText().toString();
                                 if (!nombreUsuario.trim().isEmpty()) {
-                                    // Consultar las monedas totales del usuario
-                                    int monedasTotales = obtenerMonedasTotalesDelUsuario(nombreUsuario);
+                                    // Llama al método para obtener y almacenar la ubicación
+                                    obtenerYAlmacenarUbicacion(new UbicacionCallback() {
+                                        @Override
+                                        public void onUbicacionObtenida(String ubicacion) {
+                                            // Consultar las monedas totales del usuario
+                                            int monedasTotales = obtenerMonedasTotalesDelUsuario(nombreUsuario);
 
-                                    // Llamar a verificarEInsertarUsuario con las monedas totales obtenidas
-                                    long usuarioId = dbManager.verificarEInsertarUsuario(nombreUsuario, monedasTotales);
+                                            // Llamar a verificarEInsertarUsuario con las monedas totales obtenidas
+                                            long usuarioId = dbManager.verificarEInsertarUsuario(nombreUsuario, monedasTotales, ubicacion);
 
-                                    // Guarda el nombre en SharedPreferences
-                                    guardarNombreUsuarioEnPrefs(nombreUsuario);
-                                    // Guarda el ID del usuario en SharedPreferences
-                                    guardarIdUsuarioEnPrefs(usuarioId);
-                                    // Actualiza las monedas totales en SharedPreferences
-                                    guardarMonedasTotalesEnPrefs(monedasTotales);
+                                            // Guarda el nombre en SharedPreferences
+                                            guardarNombreUsuarioEnPrefs(nombreUsuario);
+                                            // Guarda el ID del usuario en SharedPreferences
+                                            guardarIdUsuarioEnPrefs(usuarioId);
+                                            // Actualiza las monedas totales en SharedPreferences
+                                            guardarMonedasTotalesEnPrefs(monedasTotales);
 
-                                    // Lanza la actividad Menu
-                                    Intent intent = new Intent(MainActivity.this, Menu.class);
-                                    startActivity(intent);
+                                            // Lanza la actividad Menu
+                                            Intent intent = new Intent(MainActivity.this, Menu.class);
+                                            startActivity(intent);
+                                        }
+                                    });
                                 } else {
                                     Toast.makeText(MainActivity.this, "Por favor, ingresa un nombre de usuario.", Toast.LENGTH_LONG).show();
                                 }
@@ -78,6 +88,7 @@ public class MainActivity extends AppCompatActivity {
                         .show();
             }
         });
+
         Button btnSalir = findViewById(R.id.btnSalir);
         btnSalir.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -85,6 +96,7 @@ public class MainActivity extends AppCompatActivity {
                 finishAffinity();
             }
         });
+
         Button btnOpciones = findViewById(R.id.btnOpciones);
         btnOpciones.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, Opciones.class);
@@ -99,7 +111,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
     }
 
     @Override
@@ -129,6 +140,45 @@ public class MainActivity extends AppCompatActivity {
         Intent musicServiceIntent = new Intent(this, MusicaFondo.class);
         stopService(musicServiceIntent);
         super.onDestroy();
+    }
+
+    // Método para obtener y almacenar la ubicación del usuario
+    private void obtenerYAlmacenarUbicacion(final UbicacionCallback callback) {
+        // Inicializar el LocationManager
+        LocationManager locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
+
+        // Verificar si se tienen permisos de ubicación
+        if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
+            // Obtener la última ubicación conocida del proveedor de ubicación
+            Location lastKnownLocation = locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
+
+            // Verificar si la ubicación no es nula
+            if (lastKnownLocation != null) {
+                // Obtener la latitud y longitud
+                double latitude = lastKnownLocation.getLatitude();
+                double longitude = lastKnownLocation.getLongitude();
+
+                // Convertir la latitud y longitud a una cadena de ubicación
+                String ubicacion = "Latitud: " + latitude + ", Longitud: " + longitude;
+
+                // Llamar al callback con la ubicación obtenida
+                callback.onUbicacionObtenida(ubicacion);
+            } else {
+                // Manejar el caso en que la ubicación no esté disponible
+                Log.e("MainActivity", "No se pudo obtener la ubicación actual.");
+                // Llamar al callback con un valor nulo
+                callback.onUbicacionObtenida(null);
+            }
+        } else {
+            // Si no se tienen permisos, solicitarlos al usuario
+            ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, REQUEST_CODE_LOCATION_PERMISSION);
+        }
+    }
+
+
+    // Interfaz para manejar la ubicación obtenida de manera asíncrona
+    private interface UbicacionCallback {
+        void onUbicacionObtenida(String ubicacion);
     }
 
     private int obtenerMonedasTotalesDelUsuario(String nombreUsuario) {

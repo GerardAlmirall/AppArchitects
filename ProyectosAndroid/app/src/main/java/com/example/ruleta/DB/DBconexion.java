@@ -23,7 +23,8 @@ public class DBconexion extends SQLiteOpenHelper {
         String CREAR_TBL_USUARIO = "CREATE TABLE Usuario (" +
                 "id INTEGER PRIMARY KEY AUTOINCREMENT," +
                 "nombreUsuario TEXT," +
-                "monedasTotales INTEGER)";
+                "monedasTotales INTEGER," +
+                "ubicacion TEXT)";
         db.execSQL(CREAR_TBL_USUARIO);
 
         String CREAR_TBL_TIRADA = "CREATE TABLE Tirada (" +
@@ -54,16 +55,17 @@ public class DBconexion extends SQLiteOpenHelper {
         long tiradaId = db.insert("Tirada", null, values);
 
         if (tiradaId != -1) {
-            // Si la inserción en la tabla Tirada fue exitosa, actualizar las monedas totales del usuario en la tabla Usuario
+            // Si la inserción en la tabla Tirada fue exitosa
+            // Actualizar las monedas totales del usuario en la tabla Usuario
             ContentValues updateValues = new ContentValues();
             updateValues.put("monedasTotales", nuevaTirada.getMonedasTotales());
             int rowsAffected = db.update("Usuario", updateValues, "id = ?", new String[]{String.valueOf(nuevaTirada.getUsuarioid())});
             if (rowsAffected <= 0) {
-                // Si no se actualizó ninguna fila en la tabla Usuario, registrar un error
+                // Manejar el caso en que no se actualizó ninguna fila en la tabla Usuario
                 Log.e("DBconexion", "Error al actualizar las monedas totales del usuario en la tabla Usuario.");
             }
         } else {
-            // Si la inserción en la tabla Tirada falló, registrar un error
+            // Manejar el caso en que la inserción en la tabla Tirada falló
             Log.e("DBconexion", "Error al insertar nueva tirada en la tabla Tirada.");
         }
 

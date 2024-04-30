@@ -20,81 +20,48 @@ public class DBmanager {
         this.dbConexion = new DBconexion(context);
     }
 
-    public long verificarEInsertarUsuario(String nombreUsuario, int monedasTotales) {
+    public long verificarEInsertarUsuario(String nombreUsuario, int monedasTotales, String ubicacion) {
         SQLiteDatabase db = dbConexion.getWritableDatabase();
 
         // Intenta encontrar el usuario por su nombre
         Cursor cursor = db.query("Usuario", new String[]{"id"}, "nombreUsuario = ?", new String[]{nombreUsuario}, null, null, null);
 
         long id;
-        if (cursor.moveToFirst()) {
-            int idIndex = cursor.getColumnIndex("id"); // Obtén el índice de la columna
-            if (idIndex != -1) { // Verifica que el índice sea válido
-                id = cursor.getLong(idIndex); // Usa el índice para obtener el valor de la columna
-                Log.d("DBmanager", "Usuario existente encontrado con ID: " + id);
-
-                // Actualizar las monedas totales del usuario
+        if (cursor != null && cursor.moveToFirst()) {
+            // Usuario encontrado, actualizar las monedas totales del usuario
+            int idColumnIndex = cursor.getColumnIndex("id");
+            if (idColumnIndex != -1) {
+                id = cursor.getLong(idColumnIndex);
                 ContentValues updateValues = new ContentValues();
                 updateValues.put("monedasTotales", monedasTotales);
                 db.update("Usuario", updateValues, "id = ?", new String[]{String.valueOf(id)});
             } else {
-                // Maneja el caso en que la columna "id" no exista, si es necesario
-                Log.e("DBmanager", "La columna 'id' no fue encontrada en el resultado de la consulta.");
-                throw new IllegalStateException("La columna 'id' no fue encontrada en el resultado de la consulta.");
+                // Manejar el caso en que la columna "id" no existe en el cursor
+                Log.e("Error", "La columna 'id' no existe en el cursor.");
+                id = -1; // Valor predeterminado para indicar un error
             }
         } else {
-            // Si el usuario no existe, inserta uno nuevo
-            Log.d("DBmanager", "Usuario no encontrado, procediendo a insertar nuevo usuario: " + nombreUsuario);
+            // Usuario no encontrado, insertar uno nuevo
             ContentValues values = new ContentValues();
             values.put("nombreUsuario", nombreUsuario);
-            values.put("monedasTotales", monedasTotales); // Valor de monedas totales proporcionado
-
+            values.put("monedasTotales", monedasTotales);
+            values.put("ubicacion", ubicacion);
             id = db.insert("Usuario", null, values);
-
-            if (id == -1) {
-                Log.e("DBmanager", "Error al insertar nuevo usuario: " + nombreUsuario);
-            } else {
-                Log.d("DBmanager", "Nuevo usuario insertado correctamente con ID: " + id);
-            }
         }
 
-        cursor.close(); // Asegúrate de cerrar el cursor después de usarlo
+        if (cursor != null) {
+            cursor.close();
+        }
+
         return id;
     }
-   /*
-public List<Usuario> obtenerUsuariosOrdenadosPorMonedas() {
-    List<Usuario> usuarios = new ArrayList<>();
-    SQLiteDatabase db = dbConexion.getReadableDatabase();
 
-    String[] projection = {
-            "id",
-            "nombreUsuario",
-            "monedasTotales"
-    };
 
-    String orderBy = "monedasTotales DESC"; // Ordenar por monedasTotales de forma descendente
 
-    Cursor cursor = db.query(
-            "Usuario",
-            projection,
-            null,
-            null,
-            null,
-            null,
-            orderBy);
 
-    while (cursor.moveToNext()) {
-        long id = cursor.getLong(cursor.getColumnIndexOrThrow("id"));
-        String nombreUsuario = cursor.getString(cursor.getColumnIndexOrThrow("nombreUsuario"));
-        int monedasTotales = cursor.getInt(cursor.getColumnIndexOrThrow("monedasTotales"));
 
-        usuarios.add(new Usuario((int)id, nombreUsuario, monedasTotales));
-    }
-    cursor.close();
 
-    return usuarios;
-}
-*/
+
 
 
 
